@@ -86,7 +86,7 @@ persist.timed.enable=true
 ro.qualcomm.cabl=0
 
 # SDCard
-ro.sys.sdcardfs=true
+#ro.sys.sdcardfs=true
 
 # Audio
 af.fast_track_multiplier=1
