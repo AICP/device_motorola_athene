@@ -129,7 +129,7 @@ on enable-low-power
 
     # Input boost config
     write /sys/module/cpu_boost/parameters/input_boost_freq 1094400
-    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_ms 0
 
     # Enable core control
     write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
@@ -171,5 +171,10 @@ on property:init.svc.recovery=running
     trigger enable-low-power
 
 on property:dev.bootcomplete=1
-    write /sys/block/dm-0/queue/read_ahead_kb 512
-    setprop sys.io.scheduler "cfq"
+    write /sys/block/dm-0/queue/read_ahead_kb 2048
+
+# VM
+    write /proc/sys/vm/dirty_background_ratio 85
+    write /proc/sys/vm/dirty_expire_centisecs 10
+    write /proc/sys/vm/swappiness 5
+    write /proc/sys/vm/vfs_cache_pressure 5
