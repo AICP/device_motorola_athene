@@ -26,6 +26,8 @@
  */
 
 #include <stdlib.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 #include <stdio.h>
 
 #include "vendor_init.h"
@@ -35,6 +37,17 @@
 
 static void num_sims(void);
 static void target_ram(void);
+
+void property_override(char const prop[], char const value[])
+{
+    prop_info *pi;
+
+    pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
 
 void vendor_load_properties()
 {
@@ -62,23 +75,23 @@ void vendor_load_properties()
     property_set("ro.hw.radio", radio.c_str());
 
     /* Common for all models */
-    property_set("ro.build.product", "athene");
+    property_override("ro.build.product", "athene");
     target_ram();
     num_sims();
 
     if (device_boot == "athene_13mp") {
         /* Moto G4 (XT162x) */
-        property_set("ro.product.device", "athene");
-        property_set("ro.build.description", "athene-user 7.0 NPJ25.93-14 16 release-keys");
-        property_set("ro.build.fingerprint", "motorola/athene/athene:7.0/NPJ25.93-14/16:user/release-keys");
-        property_set("ro.product.model", "Moto G4");
+        property_override("ro.product.device", "athene");
+        property_override("ro.build.description", "athene-user 7.0 NPJ25.93-14 16 release-keys");
+        property_override("ro.build.fingerprint", "motorola/athene/athene:7.0/NPJ25.93-14/16:user/release-keys");
+        property_override("ro.product.model", "Moto G4");
         property_set("ro.telephony.default_network", "10");
     } else {
         /* Moto G4 Plus (XT164x) */
-        property_set("ro.product.device", "athene_f");
-        property_set("ro.build.description", "athene_f-user 7.0 NPJ25.93-14 16 release-keys");
-        property_set("ro.build.fingerprint", "motorola/athene_f/athene_f:7.0/NPJ25.93-14/16:user/release-keys");
-        property_set("ro.product.model", "Moto G4 Plus");
+        property_override("ro.product.device", "athene_f");
+        property_override("ro.build.description", "athene_f-user 7.0 NPJ25.93-14 16 release-keys");
+        property_override("ro.build.fingerprint", "motorola/athene_f/athene_f:7.0/NPJ25.93-14/16:user/release-keys");
+        property_override("ro.product.model", "Moto G4 Plus");
         property_set("ro.telephony.default_network", "10,0");
     }
 
