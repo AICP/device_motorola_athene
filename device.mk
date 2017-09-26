@@ -114,11 +114,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8952 \
-    libbson \
-    Snap \
+    android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl \
-    android.hardware.camera.provider@2.4-impl
+    libbson \
+    Snap
 
 # Disable camera Treble path
 PRODUCT_PROPERTY_OVERRIDES += \
