@@ -2,12 +2,12 @@
   {
     "repository":  "AICP/kernel_motorola_msm8952",
     "target_path": "kernel/motorola/msm8952",
-    "branch": "n7.1"
+    "branch": "o8.0"
   },
   {
     "repository": "TheMuppets/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   },
   {
     "repository": "LineageOS/android_external_bson",
@@ -17,17 +17,17 @@
   {
     "repository": "LineageOS/android_external_stlport",
     "target_path": "external/stlport",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   },
   {
     "repository": "LineageOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   },
   {
      "repository": "LineageOS/android_packages_resources_devicesettings",
      "target_path": "packages/resources/devicesettings",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   }
 ]
 
