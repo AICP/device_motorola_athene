@@ -275,6 +275,7 @@ void chip_deleteall()
 /*
   For v1 Extract 'qcom,msm-id' parameter triplet from DTB
       qcom,msm-id = <x y z>;
+
   For v2 Extract 'qcom,msm-id', 'qcom,board-id' parameter double from DTB
       qcom,msm-id = <x z> i.e chipset, revision number;
       qcom,board-id = <y y'> i.e platform and sub-type;
@@ -963,6 +964,7 @@ int main(int argc, char **argv)
 
 
     /* Generate the master DTB file:
+
        Simplify write error handling by just checking for actual vs
        expected bytes written at the end.
      */
@@ -1105,3 +1107,4 @@ cleanup:
     chip_deleteall();
     return rc;
 }
+

@@ -346,6 +346,7 @@ on post-fs
     mkdir /persist/bt 0755 mot_tcmd bluetooth
     mkdir /persist/wmdrm 0775 mot_drm mot_drm
     mkdir /persist/security 02770 mot_tpapi mot_tpapi
+    mkdir /persist/batt_health 0755 mot_pwric mot_pwric
     mkdir /persist/mdm 0770 radio radio
 
     chown mot_tcmd mot_tcmd /persist/factory/fti
@@ -966,6 +967,12 @@ on property:ro.debuggable=1
     write /proc/sys/kernel/dmesg_restrict 0
     # enable group read/write to /dev/log/kernel
     chmod 0660 /dev/log/kernel
+
+service hw_revs /system/bin/hardware_revisions.sh
+    class late_start
+    user system
+    group system
+    oneshot
 
 service dropboxd /system/bin/dropboxd
     class late_start
