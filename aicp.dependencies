@@ -1,11 +1,11 @@
 [
   {
-    "repository":  "AICP/kernel_motorola_msm8952",
+    "repository":  "Athene-Oreo/android_kernel_motorola_msm8952",
     "target_path": "kernel/motorola/msm8952",
-    "branch": "o8.0"
+    "branch": "lineage-15.0"
   },
   {
-    "repository": "TheMuppets/proprietary_vendor_motorola",
+    "repository": "Athene-Oreo/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
     "branch": "lineage-15.0"
   },
@@ -30,4 +30,3 @@
     "branch": "lineage-15.0"
   }
 ]
-
