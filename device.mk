@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
 # Disable camera Treble path
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
- 
+
 # CMActions
 PRODUCT_PACKAGES += \
     CMActions
@@ -165,7 +165,7 @@ PRODUCT_PACKAGES += \
 # Memtrack HAL
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
- 
+
 # GNSS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
