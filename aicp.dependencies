@@ -1,13 +1,13 @@
 [
   {
-    "repository":  "Athene-Oreo/android_kernel_motorola_msm8952",
+    "repository":  "Aicp/kernel_motorola_msm8952",
     "target_path": "kernel/motorola/msm8952",
-    "branch": "lineage-15.0"
+    "branch": "o8.1"
   },
   {
-    "repository": "Athene-Oreo/proprietary_vendor_motorola",
+    "repository": "Aicp/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch": "lineage-15.0"
+    "branch": "o8.1"
   },
   {
     "repository": "LineageOS/android_external_bson",
