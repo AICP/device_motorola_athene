@@ -111,6 +111,9 @@ PRODUCT_COPY_FILES +=  \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.msm8952 \
+    libqomx_core \
+    libmm-qcamera \
     android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl \
     libbson \
