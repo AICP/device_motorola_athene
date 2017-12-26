@@ -11,6 +11,7 @@ LOCAL_C_INCLUDES += \
 LOCAL_CPPFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
 LOCAL_SRC_FILES := init_athene.cpp
 LOCAL_MODULE := libinit_athene
+
 LOCAL_STATIC_LIBRARIES := \
 	libbase
  
