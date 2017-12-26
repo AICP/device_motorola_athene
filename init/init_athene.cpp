@@ -34,8 +34,6 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-using android::init::property_set;
-
 static void num_sims(void);
 static void target_ram(void);
 
