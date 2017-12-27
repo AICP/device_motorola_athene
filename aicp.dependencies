@@ -1,0 +1,32 @@
+[
+  {
+    "repository":  "TeamButter/android_kernel_motorola_msm8952",
+    "target_path": "kernel/motorola/msm8952",
+    "branch": "lineage-15.1-64"
+  },
+  {
+    "repository": "Teambutter/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "branch": "lineage-15.1-64"
+  },
+  {
+    "repository": "LineageOS/android_external_bson",
+    "target_path": "external/bson",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_external_stlport",
+    "target_path": "external/stlport",
+    "branch": "lineage-15.0"
+  },
+  {
+    "repository": "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "lineage-15.0"
+  },
+  {
+     "repository": "LineageOS/android_packages_resources_devicesettings",
+     "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-15.0"
+  }
+]
