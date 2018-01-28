@@ -1,8 +1,8 @@
 [
   {
-    "repository":  "TeamButter/android_kernel_motorola_msm8952",
+    "repository":  "AICP/kernel_motorola_msm8952",
     "target_path": "kernel/motorola/msm8952",
-    "branch": "lineage-15.1-64"
+    "branch": "o8.1"
   },
   {
     "repository": "Teambutter/proprietary_vendor_motorola",
