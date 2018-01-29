@@ -24,13 +24,13 @@
 
         <SwitchPreference
             android:key="gesture_camera_action"
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:title="@string/camera_gesture_title"
             android:summary="@string/camera_gesture_summary" />
 
         <SwitchPreference
             android:key="gesture_chop_chop"
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:title="@string/chop_chop_gesture_title"
             android:summary="@string/chop_chop_gesture_summary" />
 
