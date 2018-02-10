@@ -155,7 +155,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1-service_32 \
     fingerprint.msm8952
 
 # Gatekeeper HAL
@@ -317,10 +317,14 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
     libshim_ril \
-    libxml2
+    libxml2 \
+    rild_32
 
 PRODUCT_PACKAGES += \
     rild_socket
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rild/rild.rc:system/vendor/etc/init/rild.rc
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
@@ -338,7 +342,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:system/etc/sensors/hals.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
+    android.hardware.sensors@1.0-impl \
+    sensorservice_32
 
 # Stlport
 PRODUCT_PACKAGES += \

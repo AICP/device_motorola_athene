@@ -47,7 +47,7 @@ on early-init
 on init
     start qfintverify
 
-    export LD_SHIM_LIBS /system/vendor/lib64/lib-imsvt.so|libshims_ims.so:/system/vendor/lib/libizat_core.so|libshims_get_process_name.so:/system/vendor/lib/libril-qc-qmi-1.so|rild_socket.so:/system/lib/libandroid.so|libshim_ril.so:/system/lib/libjustshoot.so|libshims_camera.so:/system/vendor/lib/libmmcamera2_stats_modules.so|libsensor.so:/system/vendor/lib/libmmcamera2_sensor_modules.so|libsensor.so:/system/vendor/lib/libmmcamera2_pproc_modules.so|libsensor.so:/system/vendor/lib/libmmcamera2_imglib_modules.so|libsensor.so:/system/vendor/lib/libmmcamera2_iface_modules.so|libsensor.so:/system/vendor/lib/libmmcamera2_q3a_core.so|libsensor.so:/system/vendor/lib/libmmcamera2_mct.so|libsensor.so:/system/vendor/lib/libmmcamera_imglib.so|libsensor.so
+    export LD_SHIM_LIBS /system/vendor/lib64/lib-imsvt.so|libshims_ims.so:/system/vendor/lib/libizat_core.so|libshims_get_process_name.so:/system/vendor/lib/libril-qc-qmi-1.so|rild_socket.so:/system/lib/libandroid.so|libshim_ril.so:/system/lib/libjustshoot.so|libshims_camera.so
 
     # Set permissions for persist partition
     mkdir /persist 0771 system system
@@ -828,7 +828,7 @@ service atfwd /system/bin/ATFWD-daemon
     user system
     group system radio
 
-service ril-daemon1 /vendor/bin/hw/rild -c 2
+service ril-daemon1 /vendor/bin/hw/rild_32 -c 2
     class main
     user radio
     group radio cache inet misc audio log readproc wakelock diag net_raw
@@ -1028,10 +1028,6 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
    user camera
    group camera system inet input graphics
    writepid /dev/cpuset/system-background/tasks
-
-service sensoors /system/bin/sensorservice
-    class main
-    user root
 
 # Allow usb charging to be disabled peristently
 on property:persist.usb.chgdisabled=1
