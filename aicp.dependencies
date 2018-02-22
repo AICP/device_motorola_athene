@@ -1,5 +1,10 @@
 [
   {
+    "repository":  "alial04/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio/msm8952",
+    "branch": "lineage-15.1-caf-8952"
+  },
+  {
     "repository":  "AICP/kernel_motorola_msm8952",
     "target_path": "kernel/motorola/msm8952",
     "branch": "o8.1"
