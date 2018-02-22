@@ -1,7 +1,7 @@
 [
   {
     "repository":  "alial04/android_hardware_qcom_audio",
-    "target_path": "hardware/qcom/audio/msm8952",
+    "target_path": "hardware/qcom/audio-caf/msm8952",
     "branch": "lineage-15.1-caf-8952"
   },
   {
