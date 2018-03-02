@@ -21,5 +21,5 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Flag indicating if the sensor for the torch is availablei -->
-    <bool name="config_hasChopChop">false</bool>
+    <bool name="config_hasChopChop">true</bool>
 </resources>
