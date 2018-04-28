@@ -13,9 +13,6 @@
 #athene: overlay: Update for new LED capabilities
 66632 http://gerrit.aicp-rom.com device/motorola/athene
 
-#overlay: Disable SystemUI anti-falsing on lockscreen
-66635 http://gerrit.aicp-rom.com device/motorola/athene
-
 #athene: Import AOSP carrier specific GPS params
 66638 http://gerrit.aicp-rom.com device/motorola/athene
 
