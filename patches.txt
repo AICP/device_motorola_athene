@@ -3,3 +3,43 @@
 #
 # Revert "athene: Add Lineage power HAL to manifest"
 #62245 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Allow mediaextractor mremap syscall
+66626 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Update for early-mounted system partition
+66629 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: overlay: Update for new LED capabilities
+66632 http://gerrit.aicp-rom.com device/motorola/athene
+
+#overlay: Disable SystemUI anti-falsing on lockscreen
+66635 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Import AOSP carrier specific GPS params
+66638 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Disable SUPL for Canadian carriers
+66641 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Specifies the default files to pin via Pinner Service
+66644 http://gerrit.aicp-rom.com device/motorola/athene
+
+#Pin .vdex files as well
+66647 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Remove ENABLE_CPUSETS flag * No longer used.
+66650 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: remove cpuset foreground boost
+66653 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Move bool config_intrusiveNotificationLed out of Lineage-specific
+66656 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Trigger enable-low-power when boot is completed
+66659 http://gerrit.aicp-rom.com device/motorola/athene
+
+#athene: Move keylayout files to vendor
+66662 http://gerrit.aicp-rom.com device/motorola/athene
+
