@@ -12,21 +12,21 @@
   {
     "repository": "LineageOS/android_external_bson",
     "target_path": "external/bson",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.1"
   },
   {
     "repository": "LineageOS/android_external_stlport",
     "target_path": "external/stlport",
-    "branch": "lineage-15.0"
+    "branch": "lineage-15.1"
   },
   {
     "repository": "LineageOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "staging/lineage-15.1"
+    "branch": "lineage-15.1"
   },
   {
      "repository": "LineageOS/android_packages_resources_devicesettings",
      "target_path": "packages/resources/devicesettings",
-    "branch": "staging/lineage-15.1"
+    "branch": "lineage-15.1"
   }
 ]
